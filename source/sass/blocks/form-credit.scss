@@ -1,4 +1,4 @@
-.form-credit {
+.form-credit__form {
   max-width: 920px;
   padding: 52px 30px 64px;
   border: 1px solid $light;
@@ -12,15 +12,17 @@
 
   @media (max-width: $laptop-width) {
     max-width: 550px;
-    padding-bottom: 7px;
+    padding-bottom: 14px;
   }
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
+    padding-top: 32px;
   }
 
   @media (max-width: $mobile-max-width) {
     padding: 30px 22px 10px;
+    border-radius: 0;
   }
 }
 
