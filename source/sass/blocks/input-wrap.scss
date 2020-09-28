@@ -8,6 +8,10 @@
     font-size: 16px;
     line-height: 1;
     color: $black-primary;
+
+    @media (max-width: $laptop-width) {
+      margin-top: 10px;
+    }
   }
 
   & input {

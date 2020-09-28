@@ -5,6 +5,10 @@
   font-size: 28px;
   line-height: 1;
   color: $black-primary;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .main-form__subtitle {
@@ -59,6 +63,7 @@
 
   @media (max-width: $laptop-width) {
     align-items: flex-start;
+    margin-bottom: 20px;
   }
 
   & svg {
@@ -69,6 +74,22 @@
 
     @media (max-width: $laptop-width) {
       margin-top: 10px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
+
+    @media (max-width: $mobile-max-width) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.main-form__input-radio {
+  @media (max-width: $mobile-max-width) {
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 }
@@ -91,7 +112,7 @@
 
 .main-form__table {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 22px;
   padding-top: 28px;
   border-top: 1px solid $grey-light;
@@ -105,7 +126,12 @@
   }
 
   @media (max-width: $laptop-width) {
-    margin-top: 25px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: 0;
+    margin-bottom: 8px;
   }
 }
 
@@ -121,7 +147,7 @@
   @media (max-width: $mobile-max-width) {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     margin-right: 0;
   }
 
@@ -173,6 +199,7 @@
   @media (max-width: $mobile-max-width) {
     width: 100%;
     margin-right: 0;
+    font-size: 11px;
   }
 }
 
@@ -205,6 +232,8 @@
   @media (max-width: $mobile-max-width) {
     width: 100%;
     max-width: 310px;
+    margin-top: 8px;
+    margin-bottom: 30px;
   }
 }
 

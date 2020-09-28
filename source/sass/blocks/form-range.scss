@@ -1,8 +1,12 @@
 .form-range {
   &.noUi-horizontal {
     align-self: center;
-    width: 96%;
+    width: 98%;
     height: 3px;
+
+    @media (max-width: $mobile-max-width) {
+      width: 96%;
+    }
 
     & .noUi-handle {
       top: -8px;
@@ -28,6 +32,7 @@
   &.noUi-target {
     border: none;
     background-color: $transparent;
+    box-shadow: none;
   }
 
   & .noUi-connect {
