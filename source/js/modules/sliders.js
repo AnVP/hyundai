@@ -1,4 +1,3 @@
-console.log('test');
 (function () {
   const spaceDigits = function (number){
     return number.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');

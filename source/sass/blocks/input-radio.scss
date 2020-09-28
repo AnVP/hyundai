@@ -1,0 +1,24 @@
+.input-radio {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  & label {
+    font-size: 20px;
+    line-height: 24px;
+    color: $grey;
+    transition: color $style-change-duration;
+  }
+
+  & input:not(:disabled) + label:hover {
+    color: $blue;
+    cursor: pointer;
+  }
+
+  & input:disabled + label {
+    opacity: 0.6;
+  }
+
+  & input:checked + label {
+    color: $blue;
+  }
+}

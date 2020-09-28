@@ -1,24 +1,63 @@
 <section class="form-credit">
-  <form action="#" class="form-credit__form main-form">
-    <div class="main-form__title-wrapper">
-      <h2 class="main-form__title">Кредитные и лизинговые программы</h2>
-      <p class="main-form__subtitle">Срок рассмотрения 1 час</p>
-    </div>
-    <div class="main-form__group">
-      <div class="input-radio">
-        <input type="radio" name="radio" id="credit" checked>
-        <label for="credit">Условия кредитования</label>
+  <div class="form-credit__container container">
+    <form action="#" class="form-credit__form main-form">
+      <div class="main-form__top">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+          <use xlink:href="img/sprite.svg#union"/>
+        </svg>
+        <div class="main-form__title-wrapper">
+          <h2 class="main-form__title">Кредитные и&nbsp;лизинговые программы</h2>
+          <p class="main-form__subtitle">Срок рассмотрения 1&nbsp;час</p>
+        </div>
       </div>
-      <div class="input-radio">
-        <input type="radio" name="radio" id="leasing">
-        <label for="leasing">Условия лизинга</label>
+      <div class="main-form__group main-form__group--start">
+        <div class="main-form__input-radio input-radio">
+          <input type="radio" name="radio" id="credit" checked>
+          <label for="credit">Условия кредитования</label>
+        </div>
+        <div class="main-form__input-radio input-radio">
+          <input type="radio" name="radio" id="leasing">
+          <label for="leasing">Условия лизинга</label>
+        </div>
       </div>
-    </div>
-    <div class="main-form__group">
-      <div class="input-wrap">
-        <label for="time">Срок кредита, месяцевs</label>
-        <input type="text" name="time" id="time">
+      <div class="main-form__group">
+        <div class="main-form__input-wrap input-wrap">
+          <label for="time">Срок кредита, месяцев</label>
+          <input type="text" name="time" id="time" value="48">
+          <div id="time-range" class="main-form__range form-range" data-value="time" data-min="0" data-max="72" data-unit="&nbsp;мес"></div>
+        </div>
+        <div class="main-form__input-wrap input-wrap">
+          <label for="sum">Сумма кредита</label>
+          <input type="text" name="sum" id="sum" value="980000">
+          <div id="sum-range" class="main-form__range form-range" data-value="sum" data-min="0" data-max="5000000" data-unit="&nbsp;&#x20bd;"></div>
+        </div>
       </div>
-    </div>
-  </form>
+      <table class="main-form__table">
+        <tr class="main-form__table-row">
+          <td class="main-form__table-type">Первоначальный взнос</td>
+          <td class="main-form__table-value">от 200 000&nbsp;&#x20bd;</td>
+        </tr>
+        <tr class="main-form__table-row">
+          <td class="main-form__table-type">Ежемесячный платеж</td>
+          <td class="main-form__table-value">от 68 900&nbsp;&#x20bd;</td>
+        </tr>
+        <tr class="main-form__table-row">
+          <td class="main-form__table-type">Процентная ставка</td>
+          <td class="main-form__table-value">от 8,8%</td>
+        </tr>
+      </table>
+      <div class="main-form__group">
+        <div class="main-form__input-wrap input-wrap">
+          <input type="text" name="name" id="name" placeholder="Имя" aria-label="Имя">
+        </div>
+        <div class="main-form__input-wrap input-wrap">
+          <input type="text" name="tel" id="tel" placeholder="Телефон" aria-label="Телефон">
+        </div>
+      </div>
+      <div class="main-form__group main-form__group--reverse">
+        <p class="main-form__description">Нажимая на кнопку «Отправить заявку» вы соглашаетесь с <a href="#" class="main-form__link">пользовательским соглашением</a>, <a href="#" class="main-form__link">положением о конфиденциальности</a> и <a href="#" class="main-form__link">офертой</a></p>
+        <button type="submit" class="main-form__submit button">Отправить заявку</button>
+      </div>
+    </form>
+  </div>
 </section>

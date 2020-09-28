@@ -1,5 +1,6 @@
 /* Плагины */
 @import "plugins/normalize";
+@import "plugins/nouislider";
 
 /* Общие */
 @import "functions";
@@ -11,3 +12,8 @@
 /* Блоки */
 @import "blocks/container";
 @import "blocks/button";
+@import "blocks/input-radio";
+@import "blocks/input-wrap";
+@import "blocks/form-range";
+@import "blocks/main-form";
+@import "blocks/form-credit";
