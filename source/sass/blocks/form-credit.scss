@@ -1,0 +1,31 @@
+.form-credit {
+  max-width: 920px;
+  padding: 52px 30px 64px;
+  border: 1px solid $light;
+  border-radius: 6px;
+  background-color: $light;
+
+  @media (max-width: $desktop-width) {
+    max-width: 780px;
+    padding: 26px 30px 10px;
+  }
+
+  @media (max-width: $laptop-width) {
+    max-width: 550px;
+    padding-bottom: 7px;
+  }
+
+  @media (max-width: $tablet-width) {
+    max-width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding: 30px 22px 10px;
+  }
+}
+
+.form-credit__container {
+  @media (max-width: $mobile-max-width) {
+    padding: 0;
+  }
+}
